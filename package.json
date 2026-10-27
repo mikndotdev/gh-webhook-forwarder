@@ -1,0 +1,16 @@
+{
+  "name": "gh-webhook-forwarder",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc",
+    "build": "bun build src/index.ts --compile --minify --outfile dist/server"
+  },
+  "devDependencies": {
+    "@types/bun": "1",
+    "typescript": "5"
+  },
+  "dependencies": {
+    "elysia": "1"
+  }
+}
